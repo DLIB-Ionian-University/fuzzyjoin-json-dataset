@@ -22,5 +22,5 @@ This repository provides a **synthetic dataset for benchmarking fuzzy joins over
 - `join_ground_truth.jsonl.zip`  
   Ground-truth join signal (gold standard) describing which cross-collection pairs should be considered matches under the dataset’s similarity assumptions.
 
-> All datasets are provided as **zipped JSON Lines** (`.jsonl.zip`): each line is an independent JSON object (or record).
+> All datasets are provided as **zipped JSON Lines** (`.jsonl.zip`); each line is an independent JSON document (or record). Each JSON document has a unique identifier (`id`). `join_ground_truth.jsonl.zip` includes the ids of the joining pair from **A** and **B** collections, as well as the type of **B** collection and an indicative similarity value.
 
